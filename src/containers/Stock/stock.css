@@ -9,3 +9,47 @@
 	margin: auto;
 	padding: 3% 0;
 }
+
+.panel-stock{
+	background-color: #fff;
+	width: 86%;
+	margin: auto;
+	border-radius: 5px;
+	margin: 2% auto;
+}
+
+.item-showData, .showData{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.item-showData-input{width: 40%;}
+
+.item-showData{width: 18%;}
+
+.panel-search_stock{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.panel-search_stock input{
+	width: 70%;
+	font-size: 1rem;
+	border-bottom: 2px solid rgb(0, 94, 153);
+	padding: 1%;
+}
+
+.panel-search_stock button{
+	background-color:rgb(0, 94, 153);
+	padding: 2%;
+	margin: 0 1%;
+	width: 20%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.panel-search_stock button:hover{background-color:rgba(0, 94, 153, .8);}

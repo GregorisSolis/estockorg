@@ -41,8 +41,8 @@ nav{
 
 .container-stock .icon-stock{color: rgb(0, 94, 153);}
 
-.container-config .icon-config,
-.container-config_products .icon-config,
+.container-ferramenta .icon-config,
+.container-ferramenta_products .icon-ferramenta,
 .container-search .icon-config
 {color: rgb(0, 94, 153);}
 

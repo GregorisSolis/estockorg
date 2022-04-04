@@ -22,3 +22,4 @@ input:focus{outline: none;}
 button{background-color: transparent; border: none; border-radius: 5px; color: #fff;}
 
 .logo-name{color: rgb(0, 94, 113);}
+.link_backs{display: flex; width: 60%; justify-content: space-between; align-items: center; margin: auto;}

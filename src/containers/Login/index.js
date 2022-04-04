@@ -18,7 +18,7 @@ export default function Login() {
 	const clearState = () =>{
 		setTimeout(() => {
 		  setIsInfo(false)
-		}, 6000);
+		}, 4000);
 	}
 
 	const setLogin = async e =>{
@@ -52,8 +52,10 @@ export default function Login() {
 					<input type="text" name="username" placeholder='username' onChange={e => setUsername(e.target.value)}/>
 					<input type="password" name="password" placeholder='senha' onChange={e => setPassword(e.target.value)}/>
 					<button type="submit" >Entrar</button>
-					<Link to="/">Voltar para Home</Link>
-					<Link to="/register">Criar uma conta</Link>
+					<div className="link_backs">
+						<Link to="/">Voltar para Home</Link>|
+						<Link to="/register">Criar uma conta</Link>
+					</div>
 				</form>
 				{isInfo ? <Info mensagen={text}/> : ''}
 			</div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import api from '../../services/api'
 import { login } from '../../services/auth'
 import './register.css'
@@ -27,7 +27,7 @@ export default class Register extends Component{
 	veryficInputs = e => {
 		e.preventDefault()
 
-		const { username, name, password, passwordConfirm, typeUser, isActive } = this.state
+		const { username, name, password, passwordConfirm, typeUser } = this.state
 
 		//PASARLO AL BACKEND
 		if(!username || !name || !password || !passwordConfirm || typeUser === "0"){
@@ -97,6 +97,10 @@ export default class Register extends Component{
 
 						<input type="text" name="passwordConfirm" placeholder='Digite a senha novamente' onChange={e => this.setState({passwordConfirm: e.target.value})}/>
 						<button type="submit" >Confirmar</button>
+					</div>
+					<div className="link_backs">
+						<Link to="/">Voltar para Home</Link>|
+						<Link to="/login">Voltar para o Login</Link>
 					</div>
 				</form>
 				{isInfo ? <Info mensagen={text}/> : ''}

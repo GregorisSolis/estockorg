@@ -9,8 +9,8 @@ export default function Tools() {
 		<div className="container-ferramenta">
 			<Navbar/>
 			<div className="content-ferramenta">
-				<Link className="card-ferramenta" to="/ferramenta/cadastrar-produto"><h1>Cadastrar Producto</h1></Link>
-				<Link className="card-ferramenta" to="/ferramenta/buscar-produto"><h1>Buscar Producto</h1></Link>
+				<Link className="card-ferramenta" to="/ferramenta/cadastrar-produto"><h1>Cadastrar novo producto</h1></Link>
+				<Link className="card-ferramenta" to="/ferramenta/buscar-produto"><h1>Buscar e deletar producto</h1></Link>
 				<Link className="card-ferramenta" to="/ferramenta-users"><h1>Users</h1></Link>
 			</div>
 		</div>

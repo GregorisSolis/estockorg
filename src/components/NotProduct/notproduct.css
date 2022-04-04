@@ -1,0 +1,10 @@
+.container-notProduct{
+	width: 100%;
+	height: 67vh;
+	overflow: hidden;
+}
+
+.container-notProduct p{
+	font-size: 2rem;
+	color: #fff;
+}

@@ -1,0 +1,97 @@
+.content-search{
+	width: 80%;
+	margin: 5% auto;
+}
+
+.content-search button:hover,
+.btn_actions button:hover{
+	opacity: .8;
+	cursor: pointer;
+}
+
+.panel-search{
+	background-color: #fff;
+	border-radius: 5px;
+	height: 15vh;
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0% auto 2% auto;
+}
+
+
+.panel-search input,.input_confirmRemove input{
+	border-bottom: 2px solid rgb(0, 94, 153);
+	width: 35%;
+	font-size: 1.2rem;
+	padding: 1%;
+}
+
+.panel-search button, .input_confirmRemove button{
+	border-radius: none;
+	background-color: rgb(0, 94, 153);
+	width: 18%;
+	padding: 2% 3%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: .9rem;
+}
+
+.panel-search .btn-remover_product{
+	background-color: red;
+	width: 25%;
+}
+
+.content-search .item-product{
+	width: 65%;
+}
+
+.input_confirmRemove{
+	position: fixed;
+	background-color:rgba(0, 0, 0, .4);
+	z-index: 2;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input_confirmRemove form{
+	background-color: #fff;
+	height: 45vh;
+	width: 35%;
+	color: rgb(0, 94, 153);
+	display: grid;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .3);
+	padding: 5% 2%;
+	box-sizing: border-box;
+}
+
+.input_confirmRemove .btn_actions{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	margin: auto;
+}
+
+.input_confirmRemove input{
+	width: 90%;
+	height: 7vh;
+	margin: auto;
+}
+
+.btn_actions .btn-remove{
+	background-color: red;
+}
+
+.input_confirmRemove button{
+	width: 35%;
+	height: 6vh;
+}

@@ -1,0 +1,40 @@
+.container-register{
+	height: 100vh;
+	display: flex;
+}
+
+.title-logo{height: 15vh;}
+.container-register .logo-name{font-size: 2.4rem;}
+.title-logo h2{margin:2% 0;}
+
+
+.container-register .container-form{
+	width: 55%;
+	height: 70vh;
+}
+
+.container-register .content_inputs{
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	margin: 0 auto;
+	width: 100%;
+	height: 80%;
+}
+
+
+.container-register .content_inputs input{
+	height: 10vh;
+	color: black;
+	margin: 2% auto;
+}
+
+.container-register  select{
+	background-color: transparent;
+	border: none;
+	width: 70%;
+	height: 9vh;
+	margin: 2% auto;
+	font-size: 1.3rem;
+	text-align: center;
+	border-bottom: 2px solid rgb(74, 123, 125);
+}

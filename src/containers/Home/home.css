@@ -1,0 +1,21 @@
+.container-home{
+	width: 80%;
+	height: 80vh;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	overflow: hidden;
+}
+
+.container-home .content{
+	color: #fff;
+}
+
+.container-home .content h1{
+	font-size: 4rem;
+}
+
+.content_image img{
+	filter: drop-shadow(0 0 10px rgba(0, 0, 0, .4));
+}

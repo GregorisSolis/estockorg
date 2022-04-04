@@ -1,0 +1,11 @@
+.container-stock{
+	width: 100%;
+}
+
+.content-stock{
+	display: grid;
+	grid-template-columns: repeat(3, 33%);
+	max-width: 90%;
+	margin: auto;
+	padding: 3% 0;
+}

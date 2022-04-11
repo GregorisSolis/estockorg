@@ -20,10 +20,10 @@
 	margin: 0% auto 2% auto;
 }
 
-
 .panel-search input,.input_confirmRemove input{
 	border-bottom: 2px solid rgb(0, 94, 153);
-	width: 35%;
+	width: 100%;
+	margin: 5%;
 	font-size: 1.2rem;
 	padding: 1%;
 }
@@ -31,8 +31,8 @@
 .panel-search button, .input_confirmRemove button{
 	border-radius: none;
 	background-color: rgb(0, 94, 153);
-	width: 18%;
-	padding: 2% 3%;
+	width: 44%;
+	padding: 5% 3%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -41,7 +41,7 @@
 
 .panel-search .btn-remover_product{
 	background-color: red;
-	width: 25%;
+	width: 44%;
 }
 
 .content-search .item-product{
@@ -94,4 +94,31 @@
 .input_confirmRemove button{
 	width: 35%;
 	height: 6vh;
+}
+
+.panel-search .btn_actions{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 50%;
+	margin: 0 5%;
+}
+
+@media only screen and (max-width: 900px){
+	.content-search
+	{width: 100%;}
+
+	.panel-search{width: 90%; display: block; text-align: center; height: 130px;}
+	.panel-search input,.panel-search .btn_actions{width: 90%;}
+
+	.panel-search .btn_actions button{font-size: 1.1rem; padding: 3%;}
+
+	.content-search .item-product {
+ 	 width: 90%;
+ 	 margin: auto;
+	}
+
+	.input_confirmRemove form{
+		width: 95%;
+	}
 }

@@ -1,0 +1,71 @@
+.content-user{
+	margin: 1% auto 0;
+	width: 25%;
+	height: 75vh;
+	display: grid;
+	grid-template-rows: 42% 100%;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .4);
+	text-transform: uppercase;
+}
+
+.section-up{
+	background-color: rgb(32, 59, 87);
+	width: 100%;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	color: #fff;
+	box-sizing: border-box;
+	padding: 4%;
+}
+
+.section-up .image_user{
+	height: 135px; 
+	width: 135px; 
+	border: 4px solid #fff;
+	border-radius: 100%; 
+	margin: auto;
+	overflow: hidden;
+	background-color: gray;
+}
+
+.section-up .image_user img{
+	width: 100%; 
+	height: 100%; 
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+}
+
+.section-up .nameFull{width: 90%; margin: auto; text-align: center; font-size: .7rem;}
+
+.section-bottom{
+	width: 100%;
+	display: grid;
+	overflow: hidden;
+	position: relative;
+	height: 60%;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 0 4%;
+}
+
+.section-bottom h2{margin: 0; font-size: 1.4rem;}
+.section-bottom label{font-size: .7rem;color: rgb(14, 114, 114)}
+
+.nameComapany{width: 100%; text-align: center; height: 6vh;}
+.username{text-align: center;}
+
+.username h2{display: flex; justify-content: center;}
+.nameComapany h2{display: flex; justify-content: end; font-size: 1.2rem;}
+
+.btn-update_user{position: absolute; margin: 0 .3%;}
+
+.btn-update_user i{color: #fff; font-size: .9rem; cursor: pointer;}
+.btn-update_user i:hover{color: #fff; opacity: .7;}
+
+@media only screen and (max-width: 900px){
+	.container-user{display: flex; justify-content: center; align-items: center; height: 90vh;}
+	.content-user{width: 90%; grid-template-rows: 41% 100%; margin: auto;}
+}

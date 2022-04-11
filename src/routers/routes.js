@@ -8,6 +8,8 @@ import Register from '../containers/Register'
 import Tools from '../containers/Tools'
 import AddProduct from '../containers/AddProduct'
 import SearchProduct from '../containers/SearchProduct'
+import User from '../containers/User'
+import NotFoundPage from '../containers/NotFoundPage'
 
 const PrivateRoute = ({ children, redirectTo }) => {
   const isAuthenticated = localStorage.getItem("stock-token") !== null;
@@ -25,6 +27,10 @@ const RoutesApp = () => {
 	 	<Route  path="/ferramenta" element={<PrivateRoute redirectTo="/login"> <Tools/> </PrivateRoute>}/>
 	 	<Route  path="/ferramenta/cadastrar-produto" element={<PrivateRoute redirectTo="/login"> <AddProduct/> </PrivateRoute>}/>
 	 	<Route  path="/ferramenta/buscar-produto" element={<PrivateRoute redirectTo="/login"> <SearchProduct/> </PrivateRoute>}/>
+	 	<Route  path="/user" element={<PrivateRoute redirectTo="/login"> <User/> </PrivateRoute>}/>
+
+
+	 	<Route  path="/*" element={<NotFoundPage/>}/>
 	 </Routes>
 	</BrowserRouter>
    )

@@ -43,3 +43,10 @@
 }
 
 .item-product .btn-edit:hover{background-color: rgba(19, 71, 227, .8);}
+
+@media only screen and (max-width: 900px){
+	.item-product{height: 250px;}
+	.content-info_item{height: 70px;}
+	.title-product{height: 50px;}
+	.item-product .btn-edit{height: 30px;}
+}

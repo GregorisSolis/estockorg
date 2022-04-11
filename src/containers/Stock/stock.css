@@ -13,7 +13,6 @@
 .panel-stock{
 	background-color: #fff;
 	width: 86%;
-	margin: auto;
 	border-radius: 5px;
 	margin: 2% auto;
 }
@@ -24,9 +23,10 @@
 	align-items: center;
 }
 
-.item-showData-input{width: 40%;}
+.item-showData-input{width: 38%;}
 
 .item-showData{width: 18%;}
+.nomeOfCompany{width: 30%;}
 
 .panel-search_stock{
 	width: 100%;
@@ -53,3 +53,28 @@
 }
 
 .panel-search_stock button:hover{background-color:rgba(0, 94, 153, .8);}
+
+@media only screen and (max-width:900px){
+
+	.container-stock{height: auto; margin-bottom: 18vh;}
+	.panel-stock,.content-stock{display: block; width: 95%;}
+	.showData{display: block;}
+	.panel-stock{overflow: hidden; height: 250px;}
+
+	.nomeOfCompany,
+	.item-showData,
+	.item-showData-input,
+	.item-product
+	{
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+
+	.item-product{margin: 6% 0;}
+	.item-showData-input{height: 12vh; margin: 5% 0;}
+
+	.panel-search_stock{height: 50%;display: block; text-align: center;}
+	.panel-search_stock input{width: 80%; text-align: center;}
+	.panel-search_stock button{width: 26%; margin: 5% auto;}
+}

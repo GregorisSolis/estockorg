@@ -43,7 +43,8 @@
 
 @media only screen and (max-width: 900px){
     .container-form{
-        width: 60%;
+        width: 90%;
         height: 80vh;
     }
+    .link_backs{width: 80%;}
 }

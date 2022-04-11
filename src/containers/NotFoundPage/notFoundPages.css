@@ -1,0 +1,35 @@
+.container-notfound{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-notfound .content-notfound{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.container-notfound .content-notfound h1{
+	font-size: 7rem;
+	filter: drop-shadow(0 0 10px rgba(0, 0, 0, .6));
+}
+
+.container-notfound .content-notfound a{
+	border: 2px solid #fff; 
+	color:  #fff; 
+	padding: 2%; 
+	border-radius: 7px;
+	font-size: 1rem;
+}
+
+.textErro{display: flex; justify-content: center ; align-items: center;}
+
+.container-notfound .content-notfound a:hover{background-color: rgba(255, 255, 255, .4);}
+
+.rotate_textErro{transform: rotate(90deg); margin: 1% 0 0 2%}
+

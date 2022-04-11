@@ -10,7 +10,7 @@
 
 .container-register .container-form{
 	width: 55%;
-	height: 70vh;
+	height: 78vh;
 }
 
 .container-register .content_inputs{
@@ -28,13 +28,27 @@
 	margin: 2% auto;
 }
 
+.container-register  button{margin: auto; width: 30%;}
+
 .container-register  select{
 	background-color: transparent;
 	border: none;
 	width: 70%;
-	height: 9vh;
+	height: 10vh;
 	margin: 2% auto;
 	font-size: 1.3rem;
 	text-align: center;
 	border-bottom: 2px solid rgb(74, 123, 125);
+}
+
+@media only screen and (max-width: 900px){
+
+	.container-register{height: auto;}
+	.container-register .container-form{height: auto;width: 90%; margin: 5% auto;}
+	.content_inputs{height: auto; display: block;}
+	.container-register .content_inputs{display: block; width: auto; margin: 0 auto 8% auto;}
+	.container-form .container-register{width: 84%;}
+	.container-register select{width: 84%;}
+	.container-register button{width: 40%;}
+	.container-register .link_backs{margin: 9% auto;}
 }

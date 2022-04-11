@@ -15,7 +15,8 @@ export default class Register extends Component{
 		passwordConfirm: '',
 		typeUser: '',
 		text: '',
-		isInfo: false
+		isInfo: false,
+		company: ''
 	}
 
 	clearState = () =>{
@@ -27,10 +28,10 @@ export default class Register extends Component{
 	veryficInputs = e => {
 		e.preventDefault()
 
-		const { username, name, password, passwordConfirm, typeUser } = this.state
+		const { username, name, password, passwordConfirm, typeUser, company } = this.state
 
 		//PASARLO AL BACKEND
-		if(!username || !name || !password || !passwordConfirm || typeUser === "0"){
+		if(!username || !name || !password || !passwordConfirm || typeUser === "0" || !company){
 			this.setState({text: 'Todos os campos deven ser prenchidos.', isInfo: true})
 		}else if(password !== passwordConfirm){
 			this.setState({text: 'As senhas não são iguais.', isInfo: true})
@@ -46,26 +47,15 @@ export default class Register extends Component{
 
 	setRegister = async () =>{
 
-		const { username, name, password, typeUser } = this.state
-		let company = ''
-		let isActive = ''
-		let permitType = ''
+		const { username, name, password, typeUser, company } = this.state
+		let permitType = typeUser
+		let isActive = false
 		
-
-		if(typeUser === "1"){
-			company = username
-			isActive = true
-			permitType = 'boss'
-		}else if(typeUser === "2"){
-			company = 'notdefined'
-			isActive = false
-			permitType = 'auxi'
-		}
-
 		try{
 			const resdata = await api.post('/user/new-user',{username, password, name,company,isActive,permitType})
 			login(resdata.data.token)
 			localStorage.setItem('@name-stock', resdata.data.user.company)
+			localStorage.setItem('@user-stock', resdata.data.user.username)
 			window.location.href = "/stock"
 		}
 		catch(err){
@@ -93,11 +83,12 @@ export default class Register extends Component{
 						</select>
 
 						<input type="text" name="password" placeholder='senha' onChange={e => this.setState({password: e.target.value})}/>
+						<input type="text" name="nameComapany" placeholder='nome da empresa' onChange={e => this.setState({company: e.target.value})}/>
 						
 
 						<input type="text" name="passwordConfirm" placeholder='Digite a senha novamente' onChange={e => this.setState({passwordConfirm: e.target.value})}/>
-						<button type="submit" >Confirmar</button>
 					</div>
+						<button type="submit" >Confirmar</button>
 					<div className="link_backs">
 						<Link to="/">Voltar para Home</Link>|
 						<Link to="/login">Voltar para o Login</Link>

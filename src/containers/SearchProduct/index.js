@@ -17,7 +17,6 @@ export default class SearchProduct extends Component{
 		amount: '',
 		typeMaterial: '',
 		color: '',
-		companyCode: '',
 		text: '',
 		getBarcode: '',
 		isInfo: false,
@@ -77,7 +76,7 @@ export default class SearchProduct extends Component{
 	removeProduct = e => {
 		e.preventDefault()
 
-		const { confirmRemoveProdcut, companyCode, isCompoentRemove, ID, barcode } = this.state
+		const { confirmRemoveProdcut, companyCode, ID, barcode } = this.state
 
 
 		if(!barcode){
@@ -85,7 +84,6 @@ export default class SearchProduct extends Component{
 			this.clearState()
 		}else{
 
-			console.log(confirmRemoveProdcut,companyCode)
 			if(confirmRemoveProdcut !== companyCode){
 				this.setState({text: 'Não foi possivel deletar o produto, digite o codigo por favor.', isInfo: true})
 				this.clearState()
@@ -143,8 +141,10 @@ export default class SearchProduct extends Component{
 				<div className="content-search">
 					<form className="panel-search" onSubmit={this.searchProduct}>
 						<input type="search" placeholder="Digite o codigo de barra..." onChange={e => this.setState({getBarcode: e.target.value})}/>
-						<button type="submit">Buscar <i className="icon-search"></i></button>
-						<button onClick={() => this.isProduct()} className="btn-remover_product">Buscar e remover<i className="icon-delete"></i></button>
+						<div className="btn_actions">
+							<button type="submit">Buscar <i className="icon-search"></i></button>
+							<button onClick={() => this.isProduct()} className="btn-remover_product">Remover<i className="icon-delete"></i></button>
+						</div>
 					</form>
 
 						<ItemProduct 

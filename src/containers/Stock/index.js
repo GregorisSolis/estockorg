@@ -67,12 +67,12 @@ export default class Stock extends Component{
 
 				<div className="panel-stock">
 					<div className="showData">
+						<div className="nomeOfCompany item-showData">
+							<p><strong>Empresa:</strong></p><p>{this.state.nameCompany}</p>
+						</div>						
 						<div className="item-showData">
 							<p><strong>Quantidade de produto:</strong></p><p>{this.state.list.length}</p>
 						</div>
-						<div className="item-showData">
-							<p><strong>Nome da empresa:</strong></p><p>{this.state.nameCompany}</p>
-						</div>						
 						<div className="item-showData-input">
 							<form className="panel-search_stock" onSubmit={this.searchProduct}>
 								<input type="search" placeholder="Digite o codigo de barra..." onChange={e => this.setState({getBarcode: e.target.value})}/>

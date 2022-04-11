@@ -59,3 +59,11 @@
 }
 
 .content-config_products button:hover{background-color: rgba(0, 94, 153, .8); box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .1);}
+
+@media only screen and (max-width: 900px){
+
+	.content-config_products{width: 90%; height: auto; margin-bottom: 18vh;}
+	.content-config_products form{display: block;}
+	.content-config_products input{width: 100%; height: 7vh; font-size: 1.2rem;}
+	.content-config_products button{width: 40%; height: 7vh; font-size: 1rem;}
+}

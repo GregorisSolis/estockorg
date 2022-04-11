@@ -1,6 +1,7 @@
 import { GET_ID_PRODUCT } from './actionTypes';
 import { COMPONENT_UPDATE_VALUE } from './actionTypes';
 
+
 export const setProductID = id => ({
   type: GET_ID_PRODUCT,
   productID: id

@@ -90,7 +90,7 @@ export default function UpdateProduct(props){
 				</div>
 				<div className="btns-update">
 					<button className="btn_confirmar" onClick={() => setUpdateProduct()}>Confirmar</button>
-					<button className="btn_cancelar" onClick={() => dispatch(clickButton(false))}>Cerrar</button>
+					<button className="btn_cancelar" onClick={() => dispatch(clickButton(false))}>Fechar</button>
 				</div>
 			</div>
 		</div>

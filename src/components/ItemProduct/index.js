@@ -29,11 +29,11 @@ export default function ItemProduct(props){
 				<div className="section-product">				
 					<div className="content-info_item"><p><strong>Modelo</strong></p><p className="response_product">{props.model}</p></div>
 					<div className="content-info_item"><p><strong>Color</strong></p><p className="response_product">{props.color}</p></div>
-					<div className="content-info_item"><p><strong>quantidade</strong></p><p className="response_product">{props.amount}</p></div>
+					<div className="content-info_item"><p><strong>barcode</strong></p><p className="response_product">{props.barcode}</p></div>
 				</div>
 
 				<div className="section-product">	
-					<div className="content-info_item"><p><strong>barcode</strong></p><p className="response_product">{props.barcode}</p></div>
+					<div className="content-info_item"><p><strong>quantidade</strong></p><p className="response_product">{props.amount}</p></div>
 					<div className="content-info_item"><p><strong>codigo</strong></p><p className="response_product">{props.companyCode}</p></div>
 				</div>
 

@@ -6,7 +6,6 @@ import './login.css'
 import Info from '../../components/Info'
 
 
-
 export default function Login() {
 
 	const navigate = useNavigate()
@@ -34,11 +33,12 @@ export default function Login() {
 				const resdata = await api.post('/user/authenticar-user', {username, password})
 				login(resdata.data.token)
 				localStorage.setItem('@name-stock', resdata.data.user.company)
+				localStorage.setItem('@user-stock', resdata.data.user.username)
 				navigate("/stock")
 			}
 			catch(err){
 				setIsInfo(true)
-				setText('Username ou senha errada.')
+				setText('Username e senha não foi achada.')
 				clearState()
 			}
 

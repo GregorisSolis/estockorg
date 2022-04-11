@@ -39,11 +39,13 @@ nav{
 	align-items: center;
 }
 
-.container-stock .icon-stock{color: rgb(0, 94, 153);}
 
 .container-ferramenta .icon-config,
 .container-ferramenta_products .icon-ferramenta,
-.container-search .icon-config
+.container-user .icon-user,
+.container-search .icon-config,
+.container-stock .icon-stock,
+.container-config_products .icon-config
 {color: rgb(0, 94, 153);}
 
 
@@ -74,4 +76,12 @@ nav{
 }
 
 .isNotUser_nav h1{color: rgb(0, 94, 153); font-size: 2.5rem;}
+
+@media only screen and (max-width:900px){
+
+	.container-nav{position: fixed; bottom: 0; top: auto; height: 70px; overflow: hidden;}
+	.isNotUser_nav .btn-link{display: block; width: 100%;margin: 0;}
+	.isNotUser_nav h1{margin: 0 auto;}
+	.isNotUser_nav .btn-link a{width: 80%; height: 6vh; margin: 3% 0 3% auto;}
+}
 

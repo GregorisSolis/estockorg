@@ -20,3 +20,14 @@
 		right: 1%;
 	}
 }
+
+@media only screen and (max-width: 900px){
+	@keyframes showInfo{
+		from{
+			right: -79%;
+		}
+		to{
+			right: 1%;
+		}
+	}
+}

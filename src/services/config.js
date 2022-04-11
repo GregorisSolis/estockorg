@@ -1,0 +1,1 @@
+export const URLBD = 'https://estockorg-api.herokuapp.com/'

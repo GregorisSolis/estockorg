@@ -4,7 +4,6 @@ import Navbar from '../../components/Navbar'
 import ResetPassword from '../../components/ResetPassword'
 import api from '../../services/api'
 import Logo from '../../assets/iconuser.png'
-import { useSelector } from 'react-redux'
 
 
 export default function User(){

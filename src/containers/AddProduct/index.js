@@ -21,7 +21,7 @@ export default class AddProduct extends Component{
 	}
 
 	setNewProduct =  () => {
-		const { name, barcode, companyCode, model, typeMaterial, color, size, amount, nameCompany, text, handleInfo } = this.state
+		const { name, barcode, companyCode, model, typeMaterial, color, size, amount, nameCompany } = this.state
 
 		if(!name || !barcode || !companyCode || !model || !typeMaterial || !color || !size || !amount){
 			this.setState({ handleInfo: true, text: 'Todos os campos deven ser prenchidos.' })

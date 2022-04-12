@@ -76,6 +76,7 @@ export default class Register extends Component{
 					<div className="content_inputs">
 						<input type="text" name="nome" placeholder='nome completo' onChange={e => this.setState({name: e.target.value})}/>
 						<input type="text" name="username" placeholder='username' onChange={e => this.setState({username: e.target.value})}/>
+						<input type="text" name="nameComapany" placeholder='nome da empresa' onChange={e => this.setState({company: e.target.value})}/>
 						<select className="select" onChange={e => this.setState({typeUser: e.target.value})}>
 							<option value="0">Tipo de Usuario</option>
 							<option value="2">Funcionario</option>
@@ -83,10 +84,9 @@ export default class Register extends Component{
 						</select>
 
 						<input type="text" name="password" placeholder='senha' onChange={e => this.setState({password: e.target.value})}/>
-						<input type="text" name="nameComapany" placeholder='nome da empresa' onChange={e => this.setState({company: e.target.value})}/>
 						
-
 						<input type="text" name="passwordConfirm" placeholder='Digite a senha novamente' onChange={e => this.setState({passwordConfirm: e.target.value})}/>
+						
 					</div>
 						<button type="submit" >Confirmar</button>
 					<div className="link_backs">

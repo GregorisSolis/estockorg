@@ -83,5 +83,6 @@ nav{
 	.isNotUser_nav .btn-link{display: block; width: 100%;margin: 0;}
 	.isNotUser_nav h1{margin: 0 auto;}
 	.isNotUser_nav .btn-link a{width: 80%; height: 6vh; margin: 3% 0 3% auto;}
+	.container-nav p{display: none;}
 }
 

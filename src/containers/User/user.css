@@ -58,7 +58,7 @@
 .username{text-align: center;}
 
 .username h2{display: flex; justify-content: center;}
-.nameComapany h2{display: flex; justify-content: end; font-size: 1.2rem;}
+.nameComapany h2{display: flex; justify-content: center; font-size: 1.2rem;}
 
 .btn-update_user{position: absolute; margin: 0 .3%;}
 

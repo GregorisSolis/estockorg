@@ -140,7 +140,7 @@ export default class SearchProduct extends Component{
 				{isInfo?<Info mensagen={text}/>:''}
 				<div className="content-search">
 					<form className="panel-search" onSubmit={this.searchProduct}>
-						<input type="search" placeholder="Digite o codigo de barra..." onChange={e => this.setState({getBarcode: e.target.value})}/>
+						<input type="search" placeholder="buscar produto..." onChange={e => this.setState({getBarcode: e.target.value})}/>
 						<div className="btn_actions">
 							<button type="submit">Buscar <i className="icon-search"></i></button>
 							<button onClick={() => this.isProduct()} className="btn-remover_product">Remover<i className="icon-delete"></i></button>

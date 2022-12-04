@@ -1,1 +1,1 @@
-export const URLBD = 'https://estockorg-api.herokuapp.com/'
+export const URLBD = 'https://estockorg-api-production.up.railway.app/'
